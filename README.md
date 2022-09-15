@@ -1,10 +1,9 @@
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
-
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
-### AIM:
+### Aim:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
-### Equipments Required:
+### Equipment's Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 Theory
@@ -22,74 +21,74 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
  ![image](https://user-images.githubusercontent.com/36288975/163552156-a13e5a56-c638-4110-97d9-8896907c8d25.png)
 
-#### Figure -01 HALF ADDER 
+#### Figure -01 HALF ADDER:
 
 
 ![image](https://user-images.githubusercontent.com/36288975/163552057-b3547877-6d07-45b4-b7e0-bcfebfad9e1d.png)
 
-#### Figure -02 FULL ADDER 
+#### Figure -02 FULL ADDER: 
 
-### Procedure
+### Procedure:
 
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 
-Program:
-```
+## Program:
+~~~
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: EASWAR.J
-RegisterNumber:  2122212230024
+Developed by: H.Syed Abdul Wasih
+RegisterNumber: 212221240057
+~~~
 
-
-Half adder program:
-
+### Half adder program:
+~~~
 module fulladd (a,b,sum,carry);
 input a,b;
 output sum,carry;
 assign sum = (a^b);
 assign carry = (a&b);
 endmodule
-
-Full adder program:
-
+~~~
+### Full adder program:
+~~~
 module fulladd (a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum = (a^b^c);
 assign carry = ((a&b)|(a^b)&c);
 endmodule
-```
-Logic symbol & Truthtable
-RTL realization
-
+~~~
 ### Output:
-### RTL
-#### Half adder:
-![ex2 digi](https://user-images.githubusercontent.com/94154683/164240824-a7b58108-4a64-413d-a691-86d2e2cf4b99.PNG)
 
-#### Full adder:
-![ss1](https://user-images.githubusercontent.com/94154683/164455620-be9d5c59-e310-411b-bfd9-60065080e8c7.PNG)
+### Logic symbol & Truthtable:
 
-
-### TIMING DIAGRAM
-#### Half adder
-![wave form](https://user-images.githubusercontent.com/94154683/164241126-0c182b82-6619-47e3-bfa6-88b5a3b7b2c4.PNG)
-
-#### Full adder
-
-![fulladd wave](https://user-images.githubusercontent.com/94154683/164455712-701ead16-9633-494c-8504-b19833e7c6a3.PNG)
-
-### TRUTH TABLE 
 #### Half adder
 ![DIG2](https://user-images.githubusercontent.com/94154683/164457046-bfdb27f7-66f8-4a5f-b1a9-46e3b3c312c7.PNG)
 
 #### Full adder
 ![dig2 1](https://user-images.githubusercontent.com/94154683/164457085-f0929a1f-0001-4937-960d-1e386ca6c9bd.PNG)
 
+### RTL realization:
+#### Half adder:
+![ex2 digi](https://user-images.githubusercontent.com/94154683/164240824-a7b58108-4a64-413d-a691-86d2e2cf4b99.PNG)
+
+#### Full adder:
+![ss1](https://user-images.githubusercontent.com/94154683/164455620-be9d5c59-e310-411b-bfd9-60065080e8c7.PNG)
+
+### Timing Diagram:
+
+#### Half adder:
+![wave form](https://user-images.githubusercontent.com/94154683/164241126-0c182b82-6619-47e3-bfa6-88b5a3b7b2c4.PNG)
+
+#### Full adder:
+
+![fulladd wave](https://user-images.githubusercontent.com/94154683/164455712-701ead16-9633-494c-8504-b19833e7c6a3.PNG)
 
 
-### Result:
+
+
+## Result:
 Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
 
